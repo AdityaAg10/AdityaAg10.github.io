@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td {
+        font-size: large;
+        border: 1px solid black;
+    }
+    table {
+        border-collapse: collapse;
+        text-align: center;
+        padding: 15%;
+    }
+    .radio-label{
+        display: inline;
+    }
+</style>
+<body>
+    <form>
+        <table style="width: 40em;">
+            <tr>
+                <td><label for="fname">First name:</label</td>
+                <td><input type="text" id="fname" name="fname" placeholder="first name" style="text-align: center; height: 100%; width: 98%;"></td>
+            </tr>
+
+            <tr>
+                <td><label for="lname">Username:</label></td>
+                <td><input type="text" id="lname" name="lname" placeholder="last name" style="text-align: center; height: 100%; width: 98%;" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Address</label></td>
+                <td><input type="text" id="email" name="email" placeholder="email address" style="text-align: center; height: 100%; width: 98%;" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" id="pass" name="pass" placeholder="password" style="text-align: center; height: 100%; width: 98%;" ></td>
+            </tr>
+
+            <tr>
+                <td><label for="rePass">Re Enter Password</label></td>
+                <td><input type="password" id="repass" name="repass" placeholder="password" style="text-align: center; height: 100%; width: 98%;"></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <div class="radio-label">    
+                        <input type="radio" id="male" name="male" value="Male">
+                        <label for="male">Male</label> <br>
+                        <input type="radio" id="female" name="female" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td style="height: 210px;"><input type="text" id="address" name="address" placeholder="address" style="text-align: center; height: 200px;" size="50"></td>
+            </tr>
+
+            <tr>
+                <td><label for="state">State</label></td>
+                <td><input type="text" id="state" name="state" placeholder="state" style="text-align: center;"></td>
+            </tr>
+            
+        </table>
+        <br>
+        <input type="submit" value="Save">
+</form> 
+</body>
+</html>

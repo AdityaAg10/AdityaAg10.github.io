@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(227, 227, 54);
+}
+
+.vertical ul {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    float: left;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+
+.vertical li {
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1.5px solid black;
+    border-right: 10px solid black;
+}
+
+.vertical li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.vertical li a:hover {
+    background-color: #555;
+    color: white;
+}   
+
+.data h1, p {
+    color: rgb(124, 7, 150);
+}

@@ -1,0 +1,31 @@
+img {
+    border-radius: 50%;
+    height: 17em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+.login {
+    display: grid;
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login #logbtn {
+    background-color: #4CB050;
+    border: none;
+    font-size: 75%;
+    color: white;
+    padding: 9px;
+}
+
+input{
+    padding: 5px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #dcdada;
+}
+

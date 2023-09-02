@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    width: 100px;
+    /* background-color: #f1f1f1; */
+    position: fixed;
+    height: fit-content;
+    overflow: auto;
+    top: 15%; /* Align the top of the <ul> to the middle of the viewport */
+    transform: translateY(-50%); /* Vertically center the <ul> */
+    left: 0;
+}
+
+li {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+li a{
+    display: grid;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  
+}
+
+li:nth-child(odd) {
+  background-color: #E6E6E6; /* Light gray for odd rows */
+}
+
+li:nth-child(even) {
+  background-color: #D3D3D3; /* Slightly darker gray for even rows */
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div h1 {
+    margin-left: 100px; /* Adjust the margin as needed */
+}
