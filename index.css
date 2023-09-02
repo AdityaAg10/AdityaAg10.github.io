@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(166, 231, 231);
+}
+
+.HTML {
+    border: 2px solid black;
+    width: 15em;
+    padding: 1%;
+    position: fixed;
+    height: 20em;
+}
+
+.HTML a{
+    display: grid;
+    margin-bottom: 15px;
+}
+
+.CSS {
+    border: 2px solid black;
+    width: 16em;
+    padding: 1%;
+    position: fixed;
+    margin-left: 20%;
+    height: 20em;
+}
+
+.CSS a{
+    display: grid;
+    margin-bottom: 15px;
+}
+
