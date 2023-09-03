@@ -3,75 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
 </head>
 <style>
-    td {
-        font-size: large;
-        border: 1px solid black;
+    body {
+        text-align: center;
     }
+
+    form {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    td.label-cell {
+        font-size: medium;
+        font-weight: bold;
+        width: 30%;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    td.input-cell {
+        width: 70%;
+        text-align: center;
+    }
+
     table {
         border-collapse: collapse;
         text-align: center;
-        padding: 15%;
+        width: 100%;
+        border: 1px solid #000000; /* Add this line to create a border */
     }
-    .radio-label{
+
+    th, td {
+        border: 1px solid #000000; /* Add this line to create cell borders */
+    }
+
+    .radio-label {
         display: inline;
     }
+
+    input.register {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    input {
+        width: 98%;
+    }
+    .last-line {
+        height: 25px;
+    }
 </style>
+
+
 <body>
+    <h1>Registration Form</h1>
     <form>
-        <table style="width: 40em;">
+        <table>
             <tr>
-                <td><label for="fname">First name:</label</td>
-                <td><input type="text" id="fname" name="fname" placeholder="first name" style="text-align: center; height: 100%; width: 98%;"></td>
+                <td class="label-cell"><label for="fname">First Name:</label></td>
+                <td class="input-cell"><input type="text" id="fname" name="fname" placeholder="First Name"></td>
             </tr>
 
             <tr>
-                <td><label for="lname">Username:</label></td>
-                <td><input type="text" id="lname" name="lname" placeholder="last name" style="text-align: center; height: 100%; width: 98%;" ></td>
+                <td class="label-cell"><label for="lname">Last Name:</label></td>
+                <td class="input-cell"><input type="text" id="lname" name="lname" placeholder="Last Name"></td>
             </tr>
 
             <tr>
-                <td><label for="email">Address</label></td>
-                <td><input type="text" id="email" name="email" placeholder="email address" style="text-align: center; height: 100%; width: 98%;" ></td>
+                <td class="label-cell"><label for="email">Email:</label></td>
+                <td class="input-cell"><input type="text" id="email" name="email" placeholder="Email Address"></td>
             </tr>
 
             <tr>
-                <td><label for="pass">Password</label></td>
-                <td><input type="password" id="pass" name="pass" placeholder="password" style="text-align: center; height: 100%; width: 98%;" ></td>
+                <td class="label-cell"><label for="pass">Password:</label></td>
+                <td class="input-cell"><input type="password" id="pass" name="pass" placeholder="Password"></td>
             </tr>
 
             <tr>
-                <td><label for="rePass">Re Enter Password</label></td>
-                <td><input type="password" id="repass" name="repass" placeholder="password" style="text-align: center; height: 100%; width: 98%;"></td>
+                <td class="label-cell"><label for="rePass">Re-enter Password:</label></td>
+                <td class="input-cell"><input type="password" id="repass" name="repass" placeholder="Re-enter Password"></td>
             </tr>
 
             <tr>
-                <td><label for="gender">Gender</label></td>
-                <td>
+                <td class="label-cell"><label>Gender:</label></td>
+                <td class="input-cell">
                     <div class="radio-label">    
-                        <input type="radio" id="male" name="male" value="Male">
-                        <label for="male">Male</label> <br>
-                        <input type="radio" id="female" name="female" value="Female">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label> 
+                        <input type="radio" id="female" name="gender" value="Female">
                         <label for="female">Female</label>
                     </div>
                 </td>
             </tr>
 
             <tr>
-                <td><label for="address">Address</label></td>
-                <td style="height: 210px;"><input type="text" id="address" name="address" placeholder="address" style="text-align: center; height: 200px;" size="50"></td>
+                <td class="label-cell"><label for="num">Phone Number:</label></td>
+                <td class="input-cell"><input type="number" id="num" name="num" placeholder="Phone Number"></td>
             </tr>
 
             <tr>
-                <td><label for="state">State</label></td>
-                <td><input type="text" id="state" name="state" placeholder="state" style="text-align: center;"></td>
+                <td class="label-cell"><label for="address">Address:</label></td>
+                <td class="input-cell"><input style="height: 8em;" type="text" id="address" name="address" placeholder="Address"></td>
             </tr>
-            
+
+            <tr>
+                <td class="label-cell"><label for="state">State:</label></td>
+                <td class="input-cell"><input type="text" id="state" name="state" placeholder="State"></td>
+            </tr>
+            <tr>
+                <td class="label-cell"><label for="country">State:</label></td>
+                <td class="input-cell" style="text-align: left;"><select name="country" id="country">
+                        <option value="Default">Choose your Country</option>
+                        <option value="IN">India</option>
+                        <option value="US">United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="JP">Japan</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Languages Known</strong>
+                </td>
+                <td style="text-align: left;">
+                    <form>
+                        <input type="checkbox" style="width: auto;">English
+                        <input type="checkbox" style="width: auto;">Hindi
+                        <input type="checkbox" style="width: auto;">Kannada
+                        <input type="checkbox" style="width: auto;">Telegu
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: left;">
+                    <input type="checkbox" style="width: auto;">Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr class="last-line">
+                <td colspan="2" style="text-align: right;">
+                    <p style="margin: 0%;">Log in to <a href="https://ethnus.com/">ethnus</a> website</p>
+                </td>
+            </tr>
         </table>
         <br>
-        <input type="submit" value="Save">
-</form> 
+        <input class="register" type="submit" value="Register">
+    </form> 
 </body>
 </html>

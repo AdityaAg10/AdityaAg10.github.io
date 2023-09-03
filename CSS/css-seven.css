@@ -1,0 +1,59 @@
+body{
+    background: #9F2B55;
+    color: white;
+    font-family: Inter; 
+}
+
+section{
+    width: 70%;
+    height: 852.133px;
+    background: #75203F;
+    margin: auto;
+    flex-shrink: 0;
+}
+
+.form1 label {
+    display: inline-block;
+    color: #FFF;
+    font-size: 29.867px;
+    font-weight: 400;
+    width: 220px;
+    margin-left: 10em;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.form1 input[type=button] {
+    margin-left: 15em;
+    width: 25em;
+    padding: 4px;
+}
+
+.form1 input {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 8px;
+    margin-left: 7em;
+    padding: 4px;
+    width: 350px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.radio{
+    color: #FFF;
+    font-size: 29.867px;
+    font-weight: 400;
+    margin-left: 10em;
+    margin-top: 35px;
+}
+.radio .male {
+    margin-left: 10em;
+}
+.radio .female {
+    margin-left: 30px;
+}
+.radio .other {
+    margin-left: 30px;
+}
