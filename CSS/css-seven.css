@@ -18,15 +18,21 @@ section{
     font-size: 29.867px;
     font-weight: 400;
     width: 220px;
-    margin-left: 10em;
+    margin-left: 6em;
     text-align: left;
     margin-top: 40px;
 }
 
 .form1 input[type=button] {
-    margin-left: 15em;
+    margin-left: 9em;
     width: 25em;
     padding: 4px;
+}
+
+.form1 select {
+    margin-left: 7em;
+    font-size: 25px;
+    border-radius: 8px;
 }
 
 .form1 input {
@@ -34,7 +40,7 @@ section{
     font-size: 25px;
     font-weight: 400;
     border-radius: 8px;
-    margin-left: 7em;
+    margin-left: 6em;
     padding: 4px;
     width: 350px;
     text-align: center;
@@ -45,7 +51,7 @@ section{
     color: #FFF;
     font-size: 29.867px;
     font-weight: 400;
-    margin-left: 10em;
+    margin-left: 6em;
     margin-top: 35px;
 }
 .radio .male {

@@ -3,62 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aditya Agarwal's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 5px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .HTML,
+        .CSS,
+        .BOOTSTRAP {
+            background-color: #fff;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .HTML:hover,
+        .CSS:hover,
+        .BOOTSTRAP:hover {
+            transform: scale(1.05);
+        }
+
+        .HTML h3,
+        .CSS h3,
+        .BOOTSTRAP h3 {
+            font-size: 20px;
+            margin: 0 0 15px;
+        }
+
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .task-item {
+            margin-bottom: 10px;
+        }
+
+        .task-item a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        .task-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="index.css">
 <body>
-    <h2>Aditya Agarwal <br> 21BCE1688 <br></h2>
-    <div class="HTML">
-        <h3>All the Html tasks -</h3>
-        <ul>
-            <li>
-                <a href="HTML/html-one.html" >First Task</a>
-            </li>
-            <li>
-                <a href="HTML/html-two.html">Second Task</a>
-            </li>
-            <li>
-                <a href="HTML/html-three.html">Third Task</a>
-            </li>
-            <li>
-                <a href="HTML/html-four.html">Fourth Task</a>
-            </li>
-            <li>
-                <a href="HTML/html-five.html">Fifth Task</a>
-            </li>
-        </ul>
-    </div>
+    <header>
+        <h1>Aditya Agarwal</h1>
+        <h2>21BCE1688</h2>
+    </header>
 
-    <div class="CSS">
-        <h3>All the CSS tasks -</h3>
-        <ul>
-            <li>
-                <a href="CSS/css-one.html" >First Task</a>
-            </li>
-            <li>
-                <a href="CSS/css-two.html">Second Task</a>
-            </li>
-            <li>
-                <a href="CSS/css-three.html">Third Task</a>
-            </li>
-            <li>
-                <a href="CSS/css-four.html">Fourth Task</a>
-            </li>
-            <li>
-                <a href="CSS/css-five.html">Fifth Task</a>
-            </li>
-            <li>
-                <a href="CSS/css-six.html">Sixth Task</a>
-            </li>
-            <li>
-                <a href="CSS/css-seven.html">Seventh Task</a>
-            </li>
-        </ul>
-    </div>
+    <div class="container">
+        <div class="HTML">
+            <h3>All the HTML tasks</h3>
+            <ul class="task-list">
+                <li class="task-item">
+                    <a href="HTML/html-one.html">First Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="HTML/html-two.html">Second Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="HTML/html-three.html">Third Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="HTML/html-four.html">Fourth Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="HTML/html-five.html">Fifth Task</a>
+                </li>
+            </ul>
+        </div>
 
-    <div class="BOOTSTRAP">
+        <div class="CSS">
+            <h3>All the CSS tasks</h3>
+            <ul class="task-list">
+                <li class="task-item">
+                    <a href="CSS/css-one.html">First Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="CSS/css-two.html">Second Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="CSS/css-three.html">Third Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="CSS/css-four.html">Fourth Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="CSS/css-five.html">Fifth Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="CSS/css-six.html">Sixth Task</a>
+                </li>
+                <li class="task-item">
+                    <a href="CSS/css-seven.html">Seventh Task</a>
+                </li>
+            </ul>
+        </div>
 
+        <div class="BOOTSTRAP">
+            <h3>All the Bootstrap tasks</h3>
+            <!-- Add your Bootstrap task links here -->
+        </div>
     </div>
-    
 </body>
 </html>
