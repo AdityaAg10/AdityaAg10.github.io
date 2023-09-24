@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container h2 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+    }
+    .container p {
+      display: block;
+      width: 15%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .container img {
+      position: absolute;
+      margin-left: 10px;
+      /* animation: myRight 5s infinite;
+        animation: myLeft 5s infinite;
+        animation-play-state: paused; */
+    }
+    /* @keyframes myRight {
+        from {left: 10px;}
+        to {left: 1200px;}
+    }
+    @keyframes myLeft {
+        from {left: 1200px;}
+        to {left: 10px;}
+    } */
+  </style>
+  <body>
+    <div style="margin-left: 10px;">
+        <img src="train.png" id="obj" />
+      </div>
+    <div class="container">
+      <h2>Click the following button to handle animation</h2>
+      <p>
+        <!-- <button onclick="myStart()">start</button>
+        <button onclick="myStop()">stop</button> -->
+        <button>Start Animation</button>
+        <button id="stop">Stop Animation</button>
+      </p>
+    </div>
+    
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        var div = $("img");
+        div.animate({ marginLeft: "1200px" }, 1000);
+        div.animate({ marginLeft: "10px" }, 1000);
+      });
+      $("#stop").click(function () {
+        $("img").stop(Animation);
+      });
+    });
+    /* function myStart() {
+      let id = null;
+      const elem = document.getElementById("obj");
+      let pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      function frame() {
+        if (pos == 1200) {
+          clearInterval(id);
+        } else {
+          pos++;
+          elem.style.marginLeft= pos + "px";
+        }
+      }
+    } */
+    // function myStop() {
+    //   document.getElementById("obj").style.animationPlayState = "paused";
+    // }
+    // function myStart() {
+    //   document.getElementById("obj").style.animationPlayState = "running";
+    // }
+  </script>
+</html>

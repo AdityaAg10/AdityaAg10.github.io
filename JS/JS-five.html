@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .first {
+      display: flexbox;
+      margin-left: 4em;
+      margin-top: 1em;
+      padding: 15px;
+      width: 40em;
+    }
+
+    textarea {
+      height: 50px;
+      position: fixed;
+      padding-left: 2em;
+      border: solid black 1px;
+    }
+    label {
+      width: 1em;
+      padding-right: 3em;
+    }
+    input {
+      border: solid black 1px;
+    }
+    button {
+      margin-left: 8em;
+    }
+    #name, #mail{
+      margin-left: 13px;
+    }
+    #one, #two, #three, #four {
+      margin-left: 15px;
+      color: red;
+    }
+    #four {
+      margin-left: 19.8em;
+    }
+  </style>
+
+  <body>
+    <body>
+      <div class="first">
+        <h2>Info -</h2>
+          <label>Name:</label> <input id="name" required/><label id="one"></label><br><br>
+          <label id="ml">Email:</label> <input id="mail" /><label id="two"></label><br><br>
+          <label>Website:</label> <input id="web" /><label id="three"></label><br><br>
+          <label>Message:</label> <textarea id="msg"></textarea><br><label id="four"></label><br><br>
+          <br /><br>
+        <button type="button" onclick="submit()">Submit</button>
+      </div>
+
+      <script>
+        function submit() {
+          let x = document.getElementById("name").value;
+          let y = document.getElementById("mail").value;
+          let z = document.getElementById("web").value;
+          let w = document.getElementById("msg").value;
+
+          if(x == ""){
+            x = "This feild is required"
+            document.getElementById('name').style.borderColor='red';
+          } else{
+            x=""
+            document.getElementById('name').style.borderColor='black';
+          }
+      
+          if(y == ""){
+            y = "A valid email address is required"
+            document.getElementById('mail').style.borderColor='red';
+          }else{
+            y=""
+            document.getElementById('mail').style.borderColor='black';
+          }
+
+          if(z == ""){
+            z = "A valid url is required"
+            document.getElementById('web').style.borderColor='red';
+          }else{
+            z=""
+            document.getElementById('web').style.borderColor='black';
+          }
+
+          if(w == ""){
+            w = "This feild is required"
+            document.getElementById('msg').style.borderColor='red';
+          }else{
+            w=""
+            document.getElementById('msg').style.borderColor='black';
+          }
+          document.getElementById("one").innerHTML = x;
+          document.getElementById("two").innerHTML = y;
+          document.getElementById("three").innerHTML = z;
+          document.getElementById("four").innerHTML = w;
+        }
+      </script>
+    </body>
+  </body>
+</html>
